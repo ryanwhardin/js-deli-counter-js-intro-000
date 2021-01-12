@@ -5,21 +5,21 @@ function takeANumber(katzDeli, name){
 
 function nowServing(katzDeli) {
   if (katzDeli.length > 0) {
-    return "Currently serving " + katzDeli.shift() + ".";
+    return 'Currently serving ' + katzDeli.shift() + '.';
   } else {
-      return "There is nobody waiting to be served!";
+      return 'There is nobody waiting to be served!';
   }
 }
 
 function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
-    var output = "";
+    var output = '';
     for(var i = 0; i < katzDeli.length; i++) {
-        output += (i + 1) + ". " + katzDeli[i] + ", ";
+        output += (i + 1) + '. ' + katzDeli[i] + ', ';
       }
     output = output.slice(0, -2);
-    return `The line is currently: ${output}`;
+    return 'The line is currently: ${output}';
   } else {
-    return "The line is currently empty.";
+    return 'The line is currently empty.';
   }
 }
