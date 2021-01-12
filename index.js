@@ -1,5 +1,5 @@
 function takeANumber(){
-  var katzDeli = [];
+  var katzDeli = ['Ada'];
   var otherDeli = ["Steven", "Blake", "Avi"];
-  return 'Welcome, ${otherDeli}. You are number ${katzDeli}'
+  return 'Welcome, ${katzDeli}. You are number ${otherDeli}'
 }
